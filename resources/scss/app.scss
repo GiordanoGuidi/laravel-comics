@@ -16,7 +16,7 @@
     background-size: cover;
 }
 
-
+// UPPER FOOTER
 a {
     color: #5F6A6C;
 
@@ -59,6 +59,7 @@ h4 {
     }
 }
 
+// DC-FOOTER
 .dc-info {
     height: 100px;
     background-color: #0182F9;
@@ -72,8 +73,6 @@ h4 {
     }
 }
 
-
-
 .links-card {
     display: flex;
     align-items: center;
@@ -86,5 +85,43 @@ h4 {
     img {
         width: 50px;
         height: auto;
+    }
+}
+
+// BOTTOM FOOTER
+
+.bottom-footer {
+    height: 100px;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+    a {
+        font-weight: bold;
+    }
+}
+
+.bottom-footer-info {
+    display: flex;
+    justify-content: space-between;
+
+    .sign-button {
+        border: 2px solid #0A80F9;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .icon-list {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .c-blue {
+        color: #0A80F9;
     }
 }

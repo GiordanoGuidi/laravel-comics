@@ -61,9 +61,47 @@
                 </div>
             @endforeach
             <div class="bg-footer">
-                <img src="../assets/img/dc-logo-bg.png" alt="">
+                <img src="{{Vite::asset('config/assets/img/dc-logo-bg.png')}}" alt="">
             </div>
         </div>
+        <!--BOTTOM-FOOTER-->
+    <div class="bottom-footer">
+        <div class="bottom-footer-info small-container">
+            <!--SIGN BUTTON-->
+            <a href="" class="fw-bold sign-button">SIGN UP NOW!</a>
+            <div class="d-flex align-center">
+                <span class="c-blue">FOLLOW US</span>
+                <!--ICON LIST-->
+                <ul class="icon-list">
+                    <li>
+                        <a href="#">
+                            <img src="{{Vite::asset('config/assets/img/footer-facebook.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{Vite::asset('config/assets/img/footer-periscope.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{Vite::asset('config/assets/img/footer-pinterest.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{Vite::asset('config/assets/img/footer-twitter.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{Vite::asset('config/assets/img/footer-youtube.png')}}" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
        
 
     </footer>
