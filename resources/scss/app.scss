@@ -15,3 +15,76 @@
     background-image: url(../../config/assets/img/jumbotron.jpg);
     background-size: cover;
 }
+
+
+a {
+    color: #5F6A6C;
+
+    &:hover {
+        filter: brightness(100);
+    }
+}
+
+h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.upper-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(100% - 200px);
+    position: relative;
+
+}
+
+.col {
+    flex-direction: column;
+    padding: 30px 0px;
+    margin-right: 30px;
+
+
+}
+
+.bg-footer {
+    width: 100%;
+    overflow: hidden;
+    // position: relative;
+
+    img {
+        position: absolute;
+        right: 0;
+        top: -80px;
+    }
+}
+
+.dc-info {
+    height: 100px;
+    background-color: #0182F9;
+    display: flex;
+    position: sticky;
+
+    .info-links {
+        display: flex;
+        padding: 50px 0px;
+        gap: 50px;
+    }
+}
+
+
+
+.links-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    a {
+        color: white;
+    }
+
+    img {
+        width: 50px;
+        height: auto;
+    }
+}

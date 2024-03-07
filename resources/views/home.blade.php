@@ -14,8 +14,7 @@
     {{--Main--}}
     <main>
     {{--Jumbotron--}}
-        <div class="jumbotron">
-        </div>
+       @include('includes.jumbotron')
         <!--CARDS-CONTAINER-->
         <section id="comics-list" class="small-container card-container">
             <button class="series">CURRENT SERIES</button>
@@ -33,6 +32,21 @@
             </ul>
         </section>
     </main>
+    <footer>
+        <!--DC-FOOTER-->
+        <section id="shop" class="dc-info">
+            <div class="info-links small-container">
+                @foreach ( $footerBuyLinks as $footerBuyLink)
+                <div class="links-card">
+                    <img src= "{{$footerBuyLink['src'] }}" alt="{{$footerBuyLink['text']}}">
+                    <a href="#">{{ $footerBuyLink['text'] }}</a>
+                </div>
+                @endforeach
+            </div>
+        </section>
+       
+
+    </footer>
     
 </body>
 </html>
