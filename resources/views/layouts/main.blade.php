@@ -32,6 +32,5 @@
             </ul>
         </section>
     </main>
-    @include('includes.footer')
 </body>
 </html>

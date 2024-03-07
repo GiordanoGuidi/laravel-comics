@@ -1,5 +1,5 @@
 // UPPER FOOTER
-a {
+.list-links a {
     color: #5F6A6C;
 
     &:hover {
@@ -32,7 +32,7 @@ h4 {
 .bg-footer {
     width: 100%;
     overflow: hidden;
-    // position: relative;
+    position: relative;
 
     img {
         position: absolute;
