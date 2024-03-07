@@ -44,6 +44,26 @@
                 @endforeach
             </div>
         </section>
+        <!--UPPER FOOTER-->
+        <div class="upper-footer small-container">
+            <!--COL-->
+            @foreach ($upperFooterLinks as $upperFooterLink)
+                <div class="col">
+                    <!--SINGLE LINKS LIST CREATE DYNAMICALLY-->
+                    <h4>{{ $upperFooterLink['title'] }}</h4>
+                    <ul class="list-links">
+                        @foreach ($upperFooterLink['links'] as $link)
+                        <li>
+                            <a href="{{$link['url']}}">{{ $link['text'] }}</a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endforeach
+            <div class="bg-footer">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
+            </div>
+        </div>
        
 
     </footer>
