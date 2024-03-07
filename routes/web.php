@@ -28,4 +28,4 @@ Route::get('/', function () {
         ['text' => 'Shop', 'url' => '#', 'current' => 0],
     ];
     return view('home', compact('links'));
-});
+})->name('home');
