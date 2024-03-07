@@ -21,13 +21,13 @@
             <button class="series">CURRENT SERIES</button>
             <button class="load">LOAD MORE</button>
             <ul class="cards-list">
-                @foreach ( as )
+                @foreach ( $comics as $comic )
                 <!--SINGLE-CARD-->
                 <li class="comic-book-card" v-for="book in comicBook">
-                    <a :href="book.series">
-                        <img :src=book.thumb :alt="book.series">
+                    <a href="#">
+                        <img src="{{$comic['thumb']}}" alt="#">
                     </a>
-                    <h3>{{ book.series.toUpperCase() }}</h3>
+                    <h3>{{ $comic['series'] }}</h3>
                 </li>
                 @endforeach
             </ul>
