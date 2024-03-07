@@ -22,6 +22,10 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="jumbotron">
+        </div>
+    </main>
     
 </body>
 </html>

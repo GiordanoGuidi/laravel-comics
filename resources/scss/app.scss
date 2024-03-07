@@ -37,3 +37,11 @@ header {
 .links-list li:hover {
     border-bottom: 4px solid #0182F9;
 }
+
+// JUMBOTRON
+
+.jumbotron {
+    height: 400px;
+    background-image: url(../../config/assets/img/jumbotron.jpg);
+    background-size: cover;
+}
