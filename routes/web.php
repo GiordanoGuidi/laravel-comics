@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $links = [
+        ['text' => 'Characters', 'url' => '#', 'current' => 0],
+        ['text' => 'Comics', 'url' => '#', 'current' => 0],
+        ['text' => 'Movies', 'url' => '#', 'current' => 0],
+        ['text' => 'TV', 'url' => '#', 'current' => 0],
+        ['text' => 'Games', 'url' => '#', 'current' => 0],
+        ['text' => 'Collectibles', 'url' => '#', 'current' => 0],
+        ['text' => 'Videos', 'url' => '#', 'current' => 0],
+        ['text' => 'Fans', 'url' => '#', 'current' => 0],
+        ['text' => 'News', 'url' => '#', 'current' => 0],
+        ['text' => 'Shop', 'url' => '#', 'current' => 0],
+    ];
+    return view('home', compact('links'));
 });
