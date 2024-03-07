@@ -27,5 +27,6 @@ Route::get('/', function () {
         ['text' => 'News', 'url' => '#', 'current' => 0],
         ['text' => 'Shop', 'url' => '#', 'current' => 0],
     ];
+    $comics = config('comics');
     return view('home', compact('links'));
 })->name('home');

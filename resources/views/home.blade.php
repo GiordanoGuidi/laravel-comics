@@ -16,6 +16,22 @@
     {{--Jumbotron--}}
         <div class="jumbotron">
         </div>
+        <!--CARDS-CONTAINER-->
+        <section id="comics-list" class="small-container card-container">
+            <button class="series">CURRENT SERIES</button>
+            <button class="load">LOAD MORE</button>
+            <ul class="cards-list">
+                @foreach ( as )
+                <!--SINGLE-CARD-->
+                <li class="comic-book-card" v-for="book in comicBook">
+                    <a :href="book.series">
+                        <img :src=book.thumb :alt="book.series">
+                    </a>
+                    <h3>{{ book.series.toUpperCase() }}</h3>
+                </li>
+                @endforeach
+            </ul>
+        </section>
     </main>
     
 </body>
