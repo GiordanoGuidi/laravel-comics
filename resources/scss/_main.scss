@@ -1,4 +1,13 @@
 // MAIN
+
+// JUMBOTRON
+.jumbotron {
+    height: 400px;
+    background-image: url(../../config/assets/img/jumbotron.jpg);
+    background-size: cover;
+}
+
+
 .card-container {
     display: flex;
     padding-top: 30px;
