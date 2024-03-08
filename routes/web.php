@@ -91,3 +91,8 @@ Route::get('/', function () {
     ];
     return view('home', compact('links', 'comics', 'footerBuyLinks', 'upperFooterLinks'));
 })->name('home');
+
+Route::get('comic', function () {
+
+    return view('products.comics');
+});
