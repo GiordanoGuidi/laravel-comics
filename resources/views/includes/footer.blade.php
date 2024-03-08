@@ -4,7 +4,7 @@
         <div class="info-links small-container">
             @foreach ( $footerBuyLinks as $footerBuyLink)
             <div class="links-card">
-                <img src= "{{ $footerBuyLink['src'] }}" alt="{{$footerBuyLink['text']}}">
+                {{-- <img src= "{{ $footerBuyLink['src'] }}" alt=""> --}}
                 <a href="#">{{ $footerBuyLink['text'] }}</a>
             </div>
             @endforeach
@@ -27,7 +27,7 @@
             </div>
         @endforeach
         <div class="bg-footer">
-            <img src="{{Vite::asset('config/assets/img/dc-logo-bg.png')}}" alt="">
+            <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
         </div>
     </div>
     <!--BOTTOM-FOOTER-->

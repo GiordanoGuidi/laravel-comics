@@ -1,17 +1,4 @@
 // UPPER FOOTER
-.list-links a {
-    color: #5F6A6C;
-
-    &:hover {
-        filter: brightness(100);
-    }
-}
-
-h4 {
-    color: white;
-    margin-bottom: 10px;
-}
-
 .upper-footer {
     display: flex;
     flex-direction: column;
@@ -40,6 +27,20 @@ h4 {
         top: -80px;
     }
 }
+
+.list-links a {
+    color: #5F6A6C;
+
+    &:hover {
+        filter: brightness(100);
+    }
+}
+
+h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
 
 // DC-FOOTER
 .dc-info {
