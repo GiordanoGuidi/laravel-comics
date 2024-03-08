@@ -95,4 +95,4 @@ Route::get('/', function () {
 Route::get('comic', function () {
 
     return view('products.comics');
-});
+})->name('comic');
