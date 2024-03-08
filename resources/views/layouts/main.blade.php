@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{{asset('imgages/dc-logo.png')}}" type="images/pbg">
     {{-- Importazione Vite e Sass --}}
     @vite('resources/js/app.js')
     <title>Document</title>
@@ -32,5 +33,8 @@
             </ul>
         </section>
     </main>
+    {{--Footer--}}
+    @include('includes.foot')
+    
 </body>
 </html>

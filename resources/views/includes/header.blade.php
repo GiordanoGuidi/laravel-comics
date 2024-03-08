@@ -1,6 +1,6 @@
 <header>
     <nav class="small-container">
-        <img src="{{Vite::asset('config/assets/img/dc-logo.png')}}" alt="">
+        <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
         <!--LINKS-LIST-->
         <ul class="links-list">
             @forelse($links as $link)

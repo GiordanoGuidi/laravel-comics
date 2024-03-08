@@ -4,7 +4,7 @@
         <div class="info-links small-container">
             @foreach ( $footerBuyLinks as $footerBuyLink)
             <div class="links-card">
-                <img src= "{{$footerBuyLink['src'] }}" alt="{{$footerBuyLink['text']}}">
+                <img src= "{{ $footerBuyLink['src'] }}" alt="{{$footerBuyLink['text']}}">
                 <a href="#">{{ $footerBuyLink['text'] }}</a>
             </div>
             @endforeach
@@ -41,27 +41,27 @@
                 <ul class="icon-list">
                     <li>
                         <a href="#">
-                            <img src="{{Vite::asset('config/assets/img/footer-facebook.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="{{Vite::asset('config/assets/img/footer-periscope.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/img/footer-periscope.png')}}" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="{{Vite::asset('config/assets/img/footer-pinterest.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="{{Vite::asset('config/assets/img/footer-twitter.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/img/footer-twitter.png')}}" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="{{Vite::asset('config/assets/img/footer-youtube.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/img/footer-youtube.png')}}" alt="">
                         </a>
                     </li>
                 </ul>
