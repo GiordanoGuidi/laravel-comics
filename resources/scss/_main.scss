@@ -43,7 +43,8 @@ button.load {
     flex-wrap: wrap;
     margin-bottom: 20px;
 
-    .comic-book-card {
-        flex-basis: calc(100% / 6);
-    }
+}
+
+.comic-book-card {
+    flex-basis: calc(100% / 6);
 }

@@ -15,9 +15,11 @@
             <!--SINGLE-CARD-->
             <li class="comic-book-card">
                 <a href="#">
-                    <img src="{{$comic['thumb']}}" alt="#">
+                    <div class="thumb">
+                        <img src="{{$comic['thumb']}}" alt="#">
+                    </div>
+                    <h3>{{ $comic['series'] }}</h3>
                 </a>
-                <h3>{{ $comic['series'] }}</h3>
             </li>
             @endforeach
         </ul>
