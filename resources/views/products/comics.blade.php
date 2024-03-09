@@ -2,5 +2,7 @@
    @extends('layouts.main')
    @section('title', 'Comic')
 
-   <?php @@dd($comic) ?>
+   @section('main-content')
+   <p>{{$comic['title']}}</p>
+   @endsection
 </div>

@@ -11,10 +11,10 @@
         <button class="series">CURRENT SERIES</button>
         <button class="load">LOAD MORE</button>
         <ul class="cards-list">
-            @foreach ( $comics as $comic )
+            @foreach ( $comics as $index => $comic )
             <!--SINGLE-CARD-->
             <li class="comic-book-card">
-                <a href="{{route('comics')}}">
+                <a href="{{route('comics',$index)}}">
                     <div class="thumb">
                         <img src="{{$comic['thumb']}}" alt="#">
                     </div>

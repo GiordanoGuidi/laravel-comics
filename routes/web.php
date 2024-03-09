@@ -168,6 +168,9 @@ Route::get('comics/{index}', function ($index) {
     ];
 
     $comics = config('comics');
+    if (!is_numeric($index) || $index < 0 || $index >= count($comics)) {
+        abort(404);
+    }
 
     return view('products.comics', compact('links', 'footerBuyLinks', 'upperFooterLinks'), ['comic' => $comics[$index]]);
 })->name('comics');
