@@ -2,18 +2,19 @@
     <nav class="upper-header">
         <div class="small-container flex-end gap-50">
             <span>DC POWER VISA</span>
-            <span>ADDITIONAL DC SITES</span>
+            <span>ADDITIONAL DC SITES <i class="fa-solid fa-caret-down"></i></span>
         </div>
     </nav>
     <nav class="small-container">
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
         <!--LINKS-LIST-->
         <ul class="links-list">
-            @forelse($links as $link)
+            @foreach($links as $link)
             <li>{{$link['text']}}</li>
-        @empty
-            <h3>Non ci sono giocatori</h3>
-        @endforelse
+        @endforeach
+            <div>
+                <span> Search <i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
         </ul>
     </nav>
 </header>
