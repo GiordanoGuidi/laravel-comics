@@ -15,6 +15,12 @@
                 </ul>
             </div>
         @endforeach
+        <div class="small-container">
+            <p>All Site Content TM and 2020 DC Entertainment,unless otherwise 
+                <a href="">noted here</a>.All rights reserved.<br>
+                <a href="">Cookie Settings</a>
+            </p>
+        </div>
         <div class="bg-footer">
             <img src="{{Vite::asset('resources/img/dc-logo-bg.png')}}" alt="">
         </div>
