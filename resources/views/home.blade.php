@@ -16,7 +16,7 @@
             @foreach ( $comics as $comic )
             <!--SINGLE-CARD-->
             <li class="comic-book-card">
-                <a href="{{route('comic')}}">
+                <a href="{{route('comics')}}">
                     <div class="thumb">
                         <img src="{{$comic['thumb']}}" alt="#">
                     </div>

@@ -1,3 +1,3 @@
 <div>
-    ciao
+   @extends('layouts.main')
 </div>
