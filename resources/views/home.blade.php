@@ -24,5 +24,6 @@
             @endforeach
         </ul>
     </section>
+    @include('includes.dc_shop')
 @endsection
 </html>
