@@ -6,8 +6,6 @@
 
 @section('main-content')
 {{--Main--}}
-{{--Jumbotron--}}
-   @include('includes.jumbotron')
     <!--CARDS-CONTAINER-->
     <section id="comics-list" class="small-container card-container">
         <button class="series">CURRENT SERIES</button>
