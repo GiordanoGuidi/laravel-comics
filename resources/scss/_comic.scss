@@ -1,0 +1,16 @@
+.separator {
+    height: 50px;
+    background-color: #0182F9;
+    position: relative;
+}
+
+.comic-container {
+    width: 60%;
+    margin: 0 auto;
+
+    .thumb {
+        position: absolute;
+        bottom: 10px;
+        z-index: 3;
+    }
+}

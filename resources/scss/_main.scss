@@ -5,6 +5,8 @@
     height: 400px;
     background-image: url(../img/jumbotron.jpg);
     background-size: cover;
+    position: relative;
+    z-index: 2;
 }
 
 

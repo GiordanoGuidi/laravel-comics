@@ -34,12 +34,13 @@
     width: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
-    // position: relative;
 
     img {
+        overflow: hidden;
         position: absolute;
         right: 0;
         top: -80px;
+
     }
 }
 

@@ -16,7 +16,7 @@
             <li class="comic-book-card">
                 <a href="{{route('comics',$index)}}">
                     <div class="thumb">
-                        <img src="{{$comic['thumb']}}" alt="#">
+                        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                     </div>
                     <h3>{{ $comic['series'] }}</h3>
                 </a>
