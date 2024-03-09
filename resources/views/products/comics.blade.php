@@ -2,5 +2,5 @@
    @extends('layouts.main')
    @section('title', 'Comic')
 
-   <?php@@dd($comic)?>
+   <?php @@dd($comic) ?>
 </div>

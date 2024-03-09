@@ -92,7 +92,7 @@ Route::get('/', function () {
     return view('home', compact('links', 'comics', 'footerBuyLinks', 'upperFooterLinks'));
 })->name('home');
 
-Route::get('comics', function () {
+Route::get('comics/{index}', function ($index) {
     $links = [
         ['text' => 'Characters', 'url' => '#', 'current' => 0],
         ['text' => 'Comics', 'url' => '#', 'current' => 0],
@@ -105,7 +105,6 @@ Route::get('comics', function () {
         ['text' => 'News', 'url' => '#', 'current' => 0],
         ['text' => 'Shop', 'url' => '#', 'current' => 0],
     ];
-
     $footerBuyLinks = [
         ['id' => 1, 'text' => 'digital comics', 'src' => 'buy-comics-digital-comics.png'],
         ['id' => 2, 'text' => 'dc merfchandise', 'src' => 'buy-comics-merchandise.png'],
@@ -168,5 +167,7 @@ Route::get('comics', function () {
 
     ];
 
-    return view('products.comics', compact('links', 'footerBuyLinks', 'upperFooterLinks'));
+    $comics = config('comics');
+
+    return view('products.comics', compact('links', 'footerBuyLinks', 'upperFooterLinks'), ['comic' => $comics[$index]]);
 })->name('comics');
