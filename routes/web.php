@@ -17,16 +17,16 @@ use Illuminate\Support\Facades\Route;
 //Rotta Home
 Route::get('/', function () {
     $links = [
-        ['text' => 'Characters', 'url' => '#', 'current' => 0],
-        ['text' => 'Comics', 'url' => '#', 'current' => 0],
-        ['text' => 'Movies', 'url' => '#', 'current' => 0],
-        ['text' => 'TV', 'url' => '#', 'current' => 0],
-        ['text' => 'Games', 'url' => '#', 'current' => 0],
-        ['text' => 'Collectibles', 'url' => '#', 'current' => 0],
-        ['text' => 'Videos', 'url' => '#', 'current' => 0],
-        ['text' => 'Fans', 'url' => '#', 'current' => 0],
-        ['text' => 'News', 'url' => '#', 'current' => 0],
-        ['text' => 'Shop', 'url' => '#', 'current' => 0],
+        ['text' => 'characters', 'url' => '#', 'current' => 0],
+        ['text' => 'comics', 'url' => '#', 'current' => 0],
+        ['text' => 'movies', 'url' => '#', 'current' => 0],
+        ['text' => 'tv', 'url' => '#', 'current' => 0],
+        ['text' => 'games', 'url' => '#', 'current' => 0],
+        ['text' => 'collectibles', 'url' => '#', 'current' => 0],
+        ['text' => 'videos', 'url' => '#', 'current' => 0],
+        ['text' => 'fans', 'url' => '#', 'current' => 0],
+        ['text' => 'news', 'url' => '#', 'current' => 0],
+        ['text' => 'shop', 'url' => '#', 'current' => 0],
     ];
     $comics = config('comics');
     $footerBuyLinks = [
@@ -96,16 +96,16 @@ Route::get('/', function () {
 //Rotta Comics Details
 Route::get('comics/{index}', function ($index) {
     $links = [
-        ['text' => 'Characters', 'url' => '#', 'current' => 0],
-        ['text' => 'Comics', 'url' => '#', 'current' => 0],
-        ['text' => 'Movies', 'url' => '#', 'current' => 0],
-        ['text' => 'TV', 'url' => '#', 'current' => 0],
-        ['text' => 'Games', 'url' => '#', 'current' => 0],
-        ['text' => 'Collectibles', 'url' => '#', 'current' => 0],
-        ['text' => 'Videos', 'url' => '#', 'current' => 0],
-        ['text' => 'Fans', 'url' => '#', 'current' => 0],
-        ['text' => 'News', 'url' => '#', 'current' => 0],
-        ['text' => 'Shop', 'url' => '#', 'current' => 0],
+        ['text' => 'characters', 'url' => '#', 'current' => 0],
+        ['text' => 'comics', 'url' => '#', 'current' => 0],
+        ['text' => 'movies', 'url' => '#', 'current' => 0],
+        ['text' => 'tv', 'url' => '#', 'current' => 0],
+        ['text' => 'games', 'url' => '#', 'current' => 0],
+        ['text' => 'collectibles', 'url' => '#', 'current' => 0],
+        ['text' => 'videos', 'url' => '#', 'current' => 0],
+        ['text' => 'fans', 'url' => '#', 'current' => 0],
+        ['text' => 'news', 'url' => '#', 'current' => 0],
+        ['text' => 'shop', 'url' => '#', 'current' => 0],
     ];
     $footerBuyLinks = [
         ['id' => 1, 'text' => 'digital comics', 'src' => 'buy-comics-digital-comics.png'],
@@ -180,16 +180,16 @@ Route::get('comics/{index}', function ($index) {
 //Rotta Characters
 Route::get('/characters', function () {
     $links = [
-        ['text' => 'Characters', 'url' => '#', 'current' => 0],
-        ['text' => 'Comics', 'url' => '#', 'current' => 0],
-        ['text' => 'Movies', 'url' => '#', 'current' => 0],
-        ['text' => 'TV', 'url' => '#', 'current' => 0],
-        ['text' => 'Games', 'url' => '#', 'current' => 0],
-        ['text' => 'Collectibles', 'url' => '#', 'current' => 0],
-        ['text' => 'Videos', 'url' => '#', 'current' => 0],
-        ['text' => 'Fans', 'url' => '#', 'current' => 0],
-        ['text' => 'News', 'url' => '#', 'current' => 0],
-        ['text' => 'Shop', 'url' => '#', 'current' => 0],
+        ['text' => 'characters', 'url' => '#', 'current' => 0],
+        ['text' => 'comics', 'url' => '#', 'current' => 0],
+        ['text' => 'movies', 'url' => '#', 'current' => 0],
+        ['text' => 'tv', 'url' => '#', 'current' => 0],
+        ['text' => 'games', 'url' => '#', 'current' => 0],
+        ['text' => 'collectibles', 'url' => '#', 'current' => 0],
+        ['text' => 'videos', 'url' => '#', 'current' => 0],
+        ['text' => 'fans', 'url' => '#', 'current' => 0],
+        ['text' => 'news', 'url' => '#', 'current' => 0],
+        ['text' => 'shop', 'url' => '#', 'current' => 0],
     ];
     $footerBuyLinks = [
         ['id' => 1, 'text' => 'digital comics', 'src' => 'buy-comics-digital-comics.png'],
@@ -253,4 +253,4 @@ Route::get('/characters', function () {
 
     ];
     return view('characters', compact('links', 'footerBuyLinks', 'upperFooterLinks'));
-})->name('Characters');
+})->name('characters');
