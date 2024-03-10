@@ -2,6 +2,11 @@
     padding: 10px;
     box-sizing: border-box;
 
+    h3 {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
 }
 
 .thumb {
@@ -14,10 +19,4 @@
         object-fit: cover;
         object-position: center top;
     }
-}
-
-h3 {
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 400;
 }
