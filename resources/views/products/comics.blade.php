@@ -21,7 +21,7 @@
                      <div class="big-col">
                         <div class="price-status">
                            <div class="price">
-                              <p class="c-ligthgreen">U.S Price:<span class="c-white">$19.99</span></p>
+                              <p class="c-ligthgreen">U.S Price:<span class="c-white">{{$comic['price']}}</span></p>
                            </div>
                            <div class="status">
                               <p class="c-ligthgreen">AVAILABLE</p>
@@ -110,7 +110,7 @@
                <div class="col-25 border-l ">
                   <h4>DIGITAL COMICS</h4>
                   <div>
-                     <img src="{{Vite::asset('resources/img')}}" alt="#">
+                     <img src="" alt="#">
                   </div>
                </div>
                <div class="col-25 border-l ">

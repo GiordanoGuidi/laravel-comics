@@ -78,6 +78,8 @@
 #comic-info {
     background-color: #F6F6F6;
     height: 500px;
+    position: relative;
+    z-index: 2;
 
     .row {
         display: flex;
