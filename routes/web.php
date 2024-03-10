@@ -253,4 +253,4 @@ Route::get('/characters', function () {
 
     ];
     return view('characters', compact('links', 'footerBuyLinks', 'upperFooterLinks'));
-})->name('characters');
+})->name('Characters');

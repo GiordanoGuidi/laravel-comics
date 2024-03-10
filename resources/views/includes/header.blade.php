@@ -10,7 +10,8 @@
         <!--LINKS-LIST-->
         <ul class="links-list">
             @foreach($links as $link)
-            <li>{{$link['text']}}</li>
+            <li @if(Route::is($link['text'])) class="active" @endif>
+                {{strtoupper($link['text'])}}</li>
         @endforeach
             <div>
                 <span> Search <i class="fa-solid fa-magnifying-glass"></i></span>

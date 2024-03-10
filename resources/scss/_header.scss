@@ -40,6 +40,7 @@ nav.upper-header {
     }
 }
 
-.links-list li:hover {
+.links-list li:hover,
+.active {
     border-bottom: 4px solid #0182F9;
 }
