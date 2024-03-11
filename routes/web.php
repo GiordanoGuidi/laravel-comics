@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Rotta Home
-Route::get('/', function () {
+Route::get('comics', function () {
     $links = [
         ['text' => 'characters', 'url' => '#', 'current' => 0],
         ['text' => 'comics', 'url' => '#', 'current' => 0],
@@ -90,8 +90,8 @@ Route::get('/', function () {
         ],
 
     ];
-    return view('home', compact('links', 'comics', 'footerBuyLinks', 'upperFooterLinks'));
-})->name('home');
+    return view('comics', compact('links', 'comics', 'footerBuyLinks', 'upperFooterLinks'));
+})->name('comics');
 
 //Rotta Comics Details
 Route::get('comics/{index}', function ($index) {
@@ -174,8 +174,8 @@ Route::get('comics/{index}', function ($index) {
         abort(404);
     }
 
-    return view('products.comics', compact('links', 'footerBuyLinks', 'upperFooterLinks'), ['comic' => $comics[$index]]);
-})->name('comics');
+    return view('products.show', compact('links', 'footerBuyLinks', 'upperFooterLinks'), ['comic' => $comics[$index]]);
+})->name('products.show');
 
 //Rotta Characters
 Route::get('/characters', function () {
