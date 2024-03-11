@@ -2,7 +2,7 @@
     <!--UPPER FOOTER-->
     <div class="upper-footer small-container">
         <!--COL-->
-        @foreach ($upperFooterLinks as $upperFooterLink)
+        @foreach (config('upper_footer_links') as $upperFooterLink)
             <div class="col">
                 <!--SINGLE LINKS LIST CREATE DYNAMICALLY-->
                 <h4>{{ $upperFooterLink['title'] }}</h4>

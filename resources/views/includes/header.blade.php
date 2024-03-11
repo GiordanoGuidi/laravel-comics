@@ -9,7 +9,7 @@
         <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
         <!--LINKS-LIST-->
         <ul class="links-list">
-            @foreach($links as $link)
+            @foreach(config('header_links') as $link)
             <li @if(Route::is($link['text'])) class="active" @endif>
                 <a href="{{$link['text']}}">
                     {{strtoupper($link['text'])}}</a>
